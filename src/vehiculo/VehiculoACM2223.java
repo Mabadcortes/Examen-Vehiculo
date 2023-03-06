@@ -5,7 +5,7 @@ package vehiculo;
  *
  * @author 
  */
-public class VehiculoXXX2223 {
+public class VehiculoACM2223 {
 
     private String nombre;
     private double precio;
@@ -13,13 +13,13 @@ public class VehiculoXXX2223 {
     private int stock;
 
     /* Constructor sin argumentos */
-    public VehiculoXXX2223 ()
+    public VehiculoACM2223 ()
     {
     }
     // Constructor con parámetro para iniciar todas las propiedades de la clase
     
     
-    public VehiculoXXX2223 (String nom, double precio, int stock)
+    public VehiculoACM2223 (String nom, double precio, int stock)
     {
         this.nombre =nom;
         this.precio=precio;
@@ -59,6 +59,38 @@ public class VehiculoXXX2223 {
         if (obtenerStock()< cantidad)
             throw new Exception ("No se hay suficientes vehiculos para vender");
         stock = stock - cantidad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public double getPrecioIVA() {
+        return precioIVA;
+    }
+
+    public void setPrecioIVA(double precioIVA) {
+        this.precioIVA = precioIVA;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
     
 }  
